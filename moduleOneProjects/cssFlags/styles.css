@@ -1,0 +1,83 @@
+/* France CSS */
+
+#France {
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    height: 200px;
+    width: 300px;
+}
+
+#France2 {
+    position: relative;
+    background-color: #002495;
+    height: 200px;
+    width: 100px;
+    top: 25px;
+}
+
+#France3 {
+    position: relative;
+    background-color: #ED2938;
+    height: 200px;
+    width: 100px;
+    left: 203px;
+    bottom: 197px;
+}
+
+/* Germany CSS */
+
+
+#Germany {
+    position: absolute;
+    border-color: black;
+    background-color: #000000;
+    border-style: solid;
+    height: 200px;
+    width: 333px;
+    bottom: 200px;
+}
+
+#Germany2 {
+    position: relative;
+    background-color: #FFCE00;
+    height: 66.66px;
+    width: 339px;
+    bottom: 45px;
+}
+
+#Germany3 {
+    position: relative;
+    background-color: #DE0002;
+    height: 66.66px;
+    width: 339px;
+    bottom: 199px;
+}
+
+/* Madagascar CSS */
+
+#Germany {
+    position: absolute;
+    border-color: black;
+    background-color: #000000;
+    border-style: solid;
+    height: 200px;
+    width: 333px;
+    bottom: 200px;
+}
+
+#Madagascar2 {
+    position: relative;
+    background-color: #FFCE00;
+    height: 66.66px;
+    width: 339px;
+    bottom: 45px;
+}
+
+#Madagascar3 {
+    position: relative;
+    background-color: #DE0002;
+    height: 66.66px;
+    width: 339px;
+    bottom: 199px;
+}
