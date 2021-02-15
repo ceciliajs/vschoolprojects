@@ -56,28 +56,186 @@
 
 /* Madagascar CSS */
 
-#Germany {
+#Madagascar {
     position: absolute;
     border-color: black;
-    background-color: #000000;
+    background-color: #FFFFFF;
     border-style: solid;
     height: 200px;
-    width: 333px;
-    bottom: 200px;
+    width: 300px;
 }
 
 #Madagascar2 {
     position: relative;
-    background-color: #FFCE00;
-    height: 66.66px;
-    width: 339px;
-    bottom: 45px;
+    background-color: #FC3E32;
+    height: 100px;
+    width: 200px;
+    top: 22px;
+    left: 104px;
 }
 
 #Madagascar3 {
     position: relative;
-    background-color: #DE0002;
-    height: 66.66px;
-    width: 339px;
-    bottom: 199px;
+    background-color: #007E39;
+    height: 100px;
+    width: 200px;
+    top: 3px;
+    left: 104px;
+}
+
+/* Switzerland CSS */
+
+#Switzerland {
+    position: absolute;
+    border-color: black;
+    background-color: #FF0002;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+}
+
+#Switzerland2 {
+    position: relative;
+    background-color: #FFFFFF;
+    height: 55px;
+    width: 25px;
+    top: 40px;
+    left: 40px;
+}
+
+#Switzerland3 {
+    position: relative;
+    background-color: #FFFFFF;
+    height: 25px;
+    width: 50px;
+    bottom: 23px;
+    left: 28px;
+}
+
+/* Sweden CSS */
+
+#Sweden {
+    position: absolute;
+    border-color: black;
+    background-color: #0269A6;
+    border-style: solid;
+    height: 500px;
+    width: 800px;
+}
+
+#Sweden2 {
+    position: relative;
+    background-color: #FECC00;    ;
+    height: 500px;
+    width: 100px;
+    top: 24px;
+    left: 200px;
+}
+
+#Sweden3 {
+    position: relative;
+    background-color: #FECC00;
+    height: 100px;
+    width: 800px;
+    bottom: 300px;
+    left: 3px;
+}
+
+/* Gambia CSS */
+
+#Gambia {
+    position: absolute;
+    border-color: black;
+    background-color:#FFFFFF;
+    border-style: solid;
+    height: 200px;
+    width: 300px;
+}
+
+#Gambia2 {
+    position: relative;
+    background-color: #CE1127;
+    height: 60px;
+    width: 300px;
+    top: 24px;
+    left: 3px;
+    
+}
+
+#Gambia3 {
+    position: relative;
+    background-color: #0D1D8B;
+    height: 50px;
+    width: 300px;
+    left: 3px;
+    top: 13px;
+}
+#Gambia4 {
+    position: relative;
+    background-color: #3B7827;
+    height: 60px;
+    width: 300px;
+    left: 3px;
+    top: 5px;
+}
+
+/* Japan CSS */
+
+#Japan {
+    position: absolute;
+    border-color: black;
+    background-color:#FFFFFF;
+    border-style: solid;
+    height: 200px;
+    width: 300px;
+}
+
+#Japan2 {
+    position: relative;
+    background-color: #BC022C;
+    height: 100px;
+    width: 100px;
+    top: 70px;
+    left: 100px;
+    border-radius: 50px;
+    
+}
+
+/* Niger CSS */
+
+#Niger {
+    position: absolute;
+    border-color: black;
+    background-color:#FFFFFF;
+    border-style: solid;
+    height: 600px;
+    width: 700px;
+    top: 2150px;
+}
+
+#Niger2 {
+    position: relative;
+    background-color: #E15307;
+    height: 180px;
+    width: 180px;
+    top: 368px;
+    left: 255px;
+    border-radius: 100px;
+    
+}
+#Niger3 {
+    position: relative;
+    background-color: #E15307;
+    height: 200px;
+    width: 700px;
+    left: 3px;
+    bottom: 42px;
+}
+#Niger4 {
+    position: relative;
+    background-color: #10AF2A;
+    height: 200px;
+    width: 700px;
+    left: 3px;
+    top: 137px;
 }
