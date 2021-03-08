@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+
+#lightPink {
+    background-color: #F5C6D6;
+    height: 100px;
+    width: 400px;
+    border: 5px solid white;
+
+}
+
+#darkPink {
+    position: absolute;
+    background-color: #EE2E84;
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+
+}
+#darkPink2 {
+    position: absolute;
+    background-color: #EE2E84;
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    left: 108px;
+
+}
+#darkPink3 {
+    position: absolute;
+    background-color: #EE2E84;
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    left: 208px;
+
+}
+#darkPink4 {
+    position: absolute;
+    background-color: #EE2E84;
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    left: 308px;
+
+}
+
+#lightBlue {
+    position: relative;
+    top: 100px;
+    background-color: #85CFD8;
+    height: 100px;
+    width: 200px;
+    border: 5px solid white;
+
+}
+#lightBlue2 {
+    position: relative;
+    background-color: #85CFD8;
+    height: 100px;
+    width: 200px;
+    border: 5px solid white;
+    left: 200px;
+
+}
+
+#green {
+    position: relative;
+    background-color: #8DC63F;
+    height: 100px;
+    width: 300px;
+    border: 5px solid white;
+
+}
+#orange {
+    position: absolute;
+    background-color: #E76E34;
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    left: 308px;
+    top: 308px;
+
+}
+
+
+@media screen and (max-width: 768px){
+
+#lightPink {
+    background-color: #F5C6D6;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+
+}
+
+#darkPink {
+    background-color: #EE2E84;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+
+}
+#darkPink2 {
+    background-color: #EE2E84;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+
+}
+#darkPink3 {
+    background-color: #EE2E84;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+
+}
+#darkPink4 {
+    background-color: #EE2E84;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+
+}
+
+#lightBlue {
+    background-color: #85CFD8;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+    top: 10px;
+
+}
+#lightBlue2 {
+    background-color: #85CFD8;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+
+}
+
+#green {
+    background-color: #8DC63F;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+
+}
+#orange {
+    background-color: #E76E34;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+    top: 5px;
+
+}
+
+}
