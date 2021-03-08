@@ -1,0 +1,120 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blue;
+    
+}
+nav > div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: blueviolet;
+}
+nav > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    
+}
+nav > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: cyan;
+}
+nav > div:nth-child(4){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkcyan;
+    
+}
+nav > div:nth-child(5){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkmagenta;
+    
+}
+
+h1 {
+    font-style: italic;
+}
+
+body {
+    background-color: beige;
+}
+
+img {
+    height: 500px;
+    width: 800px;
+}
+
+p {
+    font-style: italic;
+}
+
+
+/*nail CSS*/
+
+span {
+    color:rgb(187, 151, 190);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px;
+    border: silver;
+    border-width: 5px;
+    border-style: groove;
+}
+
+#headingNails {
+    color: pink;
+}
+
+#nails {
+    position: relative;
+    right: 500px;
+}
+
+
+@media screen and (max-width: 634px){
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: red;
+            
+    }
+    body {
+        background-color: rgb(187, 151, 190);
+    }
+    
+    img {
+        height: 300px;
+        width: 450px;
+    }
+    
+    p {
+        font-size:xx-large;
+    }
+    }
+
+    span {
+        color:blueviolet;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 100px;
+        border: silver;
+        border-width: 5px;
+        border-style: groove;
+    }
+
+    #nails {
+        position: relative;
+        left: 55px;
+    }
