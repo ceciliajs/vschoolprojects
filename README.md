@@ -12,3 +12,5 @@ Responsive Color Grid - Make a grid of colors and then turn them responsive.
 Business Time - Practice what you've learn so far by creating your own mini website for a business.
 
 CSS Grid Practice - Practice using CSS Grid Layout
+
+Node Calculator - Creating a calculator using pure JavaScript
