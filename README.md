@@ -14,3 +14,5 @@ Business Time - Practice what you've learn so far by creating your own mini webs
 CSS Grid Practice - Practice using CSS Grid Layout
 
 Node Calculator - Creating a calculator using pure JavaScript
+
+Escape Room - A game where you try to escape the room by finding a key to the door. 
