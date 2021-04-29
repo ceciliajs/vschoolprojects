@@ -19,7 +19,7 @@ form.addEventListener("submit", function(event){
     
     newItem.append(inputDiv, deleteButton, editButton)
     uList.append(newItem)
-    console.log(deleteButton)
+    //console.log(deleteButton)
     
     deleteButton.addEventListener("click", function(e){
             e.target.parentNode.remove()

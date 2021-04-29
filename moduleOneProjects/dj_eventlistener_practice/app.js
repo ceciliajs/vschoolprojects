@@ -1,5 +1,6 @@
 
 var dj1 = document.getElementById("square")
+
 dj1.addEventListener('mouseover', function(){
     dj1.style.backgroundColor = "blue"
 })

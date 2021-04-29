@@ -42,4 +42,4 @@ for (var i = 0; i < right.length; i++){
     
 }
 
-console.log("Hi")
+//console.log("Hi")
