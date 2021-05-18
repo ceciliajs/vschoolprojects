@@ -21,21 +21,35 @@
 
 //Write a function that takes an array of words and a character and returns each word that has that character present.
 
-let emptyArr = []
 
-function lettersWithStrings(arr){
-    for (let index = 0; index <= arr.length; i ++){
-        if()
-    }
-}
+// function lettersWithStrings(arr,str){
+//     //console.log(str)
+//     let emptyArr = []
+//     for (let index = 0; index < arr.length; index ++){
+//         if(arr[index].includes(str)){
+//             emptyArr.push(arr[index])
+//         }
+//     }
+//     console.log(emptyArr)
+//     return emptyArr
+// }
 
-lettersWithStrings(["#3", "$$$", "C%4!", "Hey!"], "!") // => ["C%4!", "Hey!"]
+// lettersWithStrings(["#3", "$$$", "C%4!", "Hey!", "Yo!", "Cool"], "!") // => ["C%4!", "Hey!"]
 
 
 //Write a function that takes a num1 and num2 and returns whether num1 is divisible by num2.
 
-// isDivisible(4, 2) // => true
-// isDivisible(9, 3) // => true
-// isDivisible(15, 4) // => false
+function isDivisible(num1, num2){
+    if (num1 % num2 === 0 ){
+        return('true')
+    } else {
+        return('false')
+    }
+    
+}
 
-// just testing if my windows can commit
+ console.log(isDivisible(4, 2)) // => true
+ isDivisible(9, 3) // => true
+ isDivisible(15, 4) // => false
+
+

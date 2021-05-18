@@ -1,36 +1,52 @@
 # Vschool Projects
 Currently in a coding bootcamp named Vschool - these are the projects I'm working on to learn Web Development.
 
-Module 1 Projects:
+## Module 1 Projects:
 
-Terminal Practice - Practice using the terminal by creating directories, files, etc.
+<b>Terminal Practice</b> - Practice using the terminal by creating directories, files, etc.
 
-CSS Flags - Practice using CSS by making different flags of multiple countries.
+<b>CSS Flags</b> - Practice using CSS by making different flags of multiple countries.
 
-Responsive Color Grid - Make a grid of colors and then turn them responsive. 
+<b>Responsive Color Grid</b> - Make a grid of colors and then turn them responsive. 
 
-Business Time - Practice what you've learn so far by creating your own mini website for a business.
+<b>Business Time</b> - Practice what you've learn so far by creating your own mini website for a business.
 
-CSS Grid Practice - Practice using CSS Grid Layout
+<b>CSS Grid Practice</b> - Practice using CSS Grid Layout
 
-Node Calculator - Creating a calculator using pure JavaScript
+<b>Node Calculator</b> - Creating a calculator using pure JavaScript
 
-Escape Room - A game where you try to escape the room by finding a key to the door. 
+<b>Escape Room</b> - A game where you try to escape the room by finding a key to the door. 
 
-Daily Planet Editor - Fix the code. 
+<b>Daily Planet Editor</b> - Fix the code. 
 
-DJ Event listener - make a dj our of colors using event listeners
+<b>DJ Event listener</b> - make a dj our of colors using event listeners
 
-DOM Manipulation Oylmpics - Use the DOM to try to help with making the code work.
+<b>DOM Manipulation Oylmpics</b> - Use the DOM to try to help with making the code work.
 
-DOM Debug - Use the DOM to debug the code
+<b>DOM Debug</b> - Use the DOM to debug the code
 
-Mom's Shopping List - Create a shopping list that will allow you to take away and add new items to the list.
+<b>Mom's Shopping List</b> - Create a shopping list that will allow you to take away and add new items to the list.
 
-Loops and Arrays Practice - practice looping htorugh arrays
+<b>Loops and Arrays Practice</b> - practice looping through arrays
 
-Loop Olympics - 
+<b>Loop Olympics</b> - More loop practice!
 
-Array Methods Exercise - 
+<b>Array Methods Exercise</b> - Practice array methods
 
-Forception - 
+<b>Forception</b> - Practice nested loops
+
+<b>String Methods exercise</b> - Practice string methods
+
+<b>Employee Records</b> - Create a collection of employee's information for a fictious company using constructor functions.
+
+<b>Bugs on a Plane</b> - fix the bugs in the code
+
+<b>FizzBuzz</b> - Write a short program that prints each number from 1 to 100 on a new line. For each multiple of 3, print "Fizz" instead of the number. For each multiple of 5, print "Buzz" instead of the number. For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
+
+<b>Problem Solving Challenege</b> - Use your problem solving skills to create code for this assignment.
+
+<b>Final Project: Colossal Adventure RPG</b> - Create a game where a player can interact and make choices in the console.
+
+## Module 2 Projects:
+
+<b>Simple HTMl Calculator</b> - Create a simple calculator that can Add, Subtract, and Multiply.
