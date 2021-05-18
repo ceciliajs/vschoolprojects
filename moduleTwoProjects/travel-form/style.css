@@ -1,0 +1,23 @@
+body {
+    color: rgb(107, 18, 33);
+    background-color: rgb(170, 170, 199);
+    font-style: italic;
+}
+
+form {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+button {
+    color: rgb(192, 141, 149);
+    background-color: blueviolet;
+}
+
+img {
+    position: absolute;
+    left: 320px;
+    top: 180px;
+}

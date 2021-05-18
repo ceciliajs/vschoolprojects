@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(236, 236, 245);
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    border: solid;
+    border-color: black;
+    color:lawngreen;
+}
+
+#mario {
+    position: absolute;
+    left: 1225px;
+    height: 55px;
+    top: 50px;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 30px;
+    padding-bottom: 50px;
+    color: blue
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    color: brown;
+}
+
+h2 {
+    font-size: 30px;
+    font-style: oblique;
+    color:blueviolet
+    
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 10px;
+    border: solid;
+    border-bottom: black;
+}
+

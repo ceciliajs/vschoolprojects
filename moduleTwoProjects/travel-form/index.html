@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <h1>What are your current Travel Plans?</h1>
+        <img src="plane.jpeg">
+
+        
+
+        <form name="travel-form">
+           First Name: <input type="text" name="firstName"/>
+           Last Name: <input type="text" name="lastName"/>
+           Age: <input name='age' type="number"/>
+           Gender: 
+           <br>
+           Male <input type='radio' name="gender" value="Male"/> Female <input type='radio' name="gender" value="Female"/>
+
+           Which country will you be traveling too?
+           <select name="country">
+               <option value="Italy">Italy</option>
+               <option value="Thailand">Thailand</option>
+               <option value="South Korea">South Korea</option>
+           </select>
+
+           What are your Dietary Restrictions? 
+           <br>
+           Vegan: <input type="checkbox" value=" Vegan" name="diet"/>
+           Gluten free: <input type="checkbox" value=" Gluten free" name="diet"/>
+           Vegetarian: <input type="checkbox" value=" Vegetarian" name="diet"/>
+           <br>
+           <button>Submit</button>
+        </form>
+       
+        
+        <script src="app.js"></script>
+    </body>
+</html>

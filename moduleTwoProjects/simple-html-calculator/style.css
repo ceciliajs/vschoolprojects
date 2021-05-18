@@ -1,0 +1,30 @@
+body {
+    border: solid;
+}
+
+#add {
+    border: green;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    padding: 50px;
+}
+
+#subtract {
+    border: red;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    padding: 50px;
+}
+
+#multiply {
+    border: blue;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    padding: 50px;
+}
