@@ -74,6 +74,7 @@ function SkillEncounter() {
         if (badHabit.hp =- 0) {
             console.log(`You dodged this bad habit entirely, now ${badHabit.name} hp is ${badHabit.hp} and they can't ruin anyone elese's work productivity..you also gained HP and a new capability.`)
             
+            //use array method here to get rid of bad habit
             delete badHabit
             
         }

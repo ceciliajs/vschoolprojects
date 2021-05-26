@@ -1,0 +1,79 @@
+
+
+#box1 {
+height: 100px;
+width: 100px;
+border:solid;
+transition: background-color 2s linear 1s, border-style 2s linear 1s, border 2s linear 1s;
+
+}
+
+#box2 {
+height: 100px;
+width: 100px;
+border:solid;
+transition: border-radius 1s ease-in 3s, height 1s ease-out 2s;
+}
+
+#box3 {
+height: 100px;
+width: 100px;
+border:solid;
+transition: box-shadow 1s ease-out 3s, width 1s ease-in-out 2s;
+}
+
+#box4 {
+height: 100px;
+width: 100px;
+border:solid;
+transition: font-family 3s linear 3s, color 2s ease-in-out;
+}
+
+#box5 {
+height: 100px;
+width: 100px;
+border:solid;
+text-align: center;
+transition: border 3s ease 3s, width 3s linear 3s;
+}
+
+#box6 {
+height: 100px;
+width: 100px;
+border:solid;
+transition: background-color 3s ease-in 3s, opacity 3s ease 3s;
+}
+
+#box1:hover {
+background-color: blue;
+border: pink;
+border-style: groove; 
+    
+    }
+    
+#box2:hover {
+height: 50px;
+border-radius: 15px;
+    }
+    
+#box3:hover {
+box-shadow: 5px 10px darkmagenta;
+width: 500px;
+    
+    }
+    
+#box4:hover {
+font-family: 'IBM Plex Sans', sans-serif;
+color: darkred;
+
+    }
+    
+#box5:hover {
+width: 0px;
+border: 0;
+    }
+    
+#box6:hover {
+background-color: darkslateblue;
+opacity: 0.5px;
+    }

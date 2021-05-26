@@ -18,23 +18,23 @@
 
 
 var user = {username: "sam", password: "123abc"};
-function login(username){
+function login(user){
     //console.log(username)
     
     
-  if (username.username === 'sam' && username.password === '123abc') {
-      console.log("login sucessful")
-  } else throw "login unsucesssful"
+  if (user.username === 'sam' && user.password === '123abc') {
+      console.log("login successful")
+  } else throw "login unsuccessful"
 }
 
 // try {
-//     login({username: "sam", password: "123abc"})
+//     login(user)
 // } catch(err){
 //     console.log("Input is" + " " + err)
 // }
 
 try {
-    login({username: "mike", password: "1abc"})
+    login(user)
 } catch(err){
     console.log( err)
 }
