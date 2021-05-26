@@ -1,0 +1,98 @@
+{
+	"menu": [
+	    {
+			"owner": "CECILIA",
+			"appetizers": [
+				{
+					"friedPickles": [
+                        {
+                            "ingredients": ["pickles", "flour"]
+                            } 
+                        ],
+					"description": "delicious pickles"
+				},
+                {
+					"wingsDings": [
+                        {
+                            "ingredients": ["chicken", "hot sauce"]
+                            } 
+                        ],
+					"description": "yummy chicken wings"
+				}
+			],
+            "cold sandwiches": [
+				{
+					"tunaSandwich": [
+                        {
+                            "ingredients": ["tuna", "lettuce", "bread"]
+                            } 
+                        ],
+					"description": "tuna done right"
+				},
+                {
+					"coldCutCombo": [
+                        {
+                            "ingredients": ["salami", "cheese", "mushrooms", "green peppers"]
+                            } 
+                        ],
+					"description": "the coldest and most cut of combos"
+				}
+			],
+            "hot sandwiches": [
+				{
+					"tunaMelt": [
+                        {
+                            "ingredients": ["tuna", "cheese", "bread"]
+                            } 
+                        ],
+					"description": "warm tuna...yum"
+				},
+                {
+					"pattyMelt": [
+                        {
+                            "ingredients": ["beef", "tomato", "onion"]
+                            } 
+                        ],
+					"description": "Will surely make you...melt"
+				}
+			],
+            "desserts": [
+				{
+					"cheeseCake": [
+                        {
+                            "flavors": ["strawberries", "chocolate"]
+                            } 
+                        ],
+					"description": "New York Style"
+				},
+                {
+					"iceCream": [
+                        {
+                            "flavors": ["vanilla", "chocolate", "caramel"]
+                            } 
+                        ],
+					"description": "The best icecream in town"
+				}
+			],
+            "drinks": [
+				{
+					"pinaColoda": [
+                        {
+                            "ingredients": ["coconut", "rum", "cherry", "whipped cream"]
+                            } 
+                        ],
+					"description": "Like getting caught in the rain?"
+				},
+                {
+					"frozenMargarita": [
+                        {
+                            "types": ["frozen", "On the rocks"]
+                            } 
+                        ],
+					"description": "Best of the Best margaritas"
+				}
+			]
+			
+		}
+	]
+}
