@@ -1,43 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  background:transparent #fff;
+  background-image: url(http://www.csszengarden.com/214/bamboo.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/gridlines-opaque.png);
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+}
+
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    height: 50px;
-    
-    
-    /* with six rows, 50px high */
-    /* default all cells/children on the left be 2/3 the screen width, and all on the left 1/3 */
+    grid-template-rows: repeat(6, 50px);
+    grid-template-columns: 2fr 1fr;
 }
+
 .container > div {
     border: solid black 2px;
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
+}
+
+.title{
+    height: 250px;
+    background-image:url('huntington.jpeg');
+    
+}
+
+.title > img{
+    position: relative;
+    /* padding: 60px; */
+    left: 400px;
+    border: 0px;
+    margin: 0px;
+    height: 125px;
+    width:125px;
+    top: 65px;
+
+}
+
+.title > h1{
+    position: relative;
+    left: 550px;
+    bottom: 50px;
+    font-size: 50px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    border: 0px;
+    padding-bottom: 0px;
+}
+
+
+.title > h2{
+    position: relative;
+    left: 550px;
+    bottom: 65px;
+    font-size: 30px;
+    padding-top: 0px;
+    font-style: italic;
+    color: rgb(255, 255, 255, 0.5);
+
+}
+
+.title > h2 > u {
+text-decoration:underline;
+text-decoration-style: dotted;
+}
+
+.title2{
+    height:250px;
+    background-image:url('huntington.jpeg');
+    color: rgb(255, 255, 255);
+}
+
+.title2 > h1{
+    position: relative;
+    left: 250px;
+    top: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    
+}
+
+.title2 > h3 {
+    background-color: rgba(138,188,159,0.3);
+    height:70px;
+    width: 250px;
+    position: relative;
+    left: 220px;
+    top: 90px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    transition: background-color 1ms ease-in 1ms;
+}
+
+.title2:hover > h3 {
+    background-color: rgba(138,188,159,0.6);
+}
+
+.title2 > h2{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 90px;
+    position: relative;
+    left: 490px;
+    bottom: 105px;
+    
+    
+}
+
+.title2 > h4 {
+    background-color: rgba(138,188,159,0.3);
+    height:70px;
+    width: 80px;
+    position: relative;
+    left: 471px;
+    bottom: 264px;
+    transition: background-color 1ms ease-in 1ms;
+}
+
+.title2:hover > h4 {
+    background-color: rgba(138,188,159,0.6);
+}
+
+.about{
+    position: relative;
+    top: 200px;
+    background-color: #fff;
+    height:850px;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+    padding-right: 55px;
+}
+
+.about > h2{
+    font-size: 30px;
+    color: #325050;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.about > h4{
+    font-size: 25px;
+    color: #325050;
+    font-family: 'Libre Baskerville', sans-serif;
+    margin: 15px;
+    
+}
+
+.about > h4 > span{
+    font-size: 25px;
+    color: #a9b995;
+    font-family: 'Libre Baskerville', sans-serif;
+    transition: background-color 1ms ease-in-out 1ms, color 1ms ease-in-out 1ms;
+    
+}
+
+.about > h4 > span:hover{
+    background-color: blue;
+    color: white
+    
 }
 
 .authors {
-    background-color: lightcoral
-}
-.links {
-    background-color: lightpink
+    display: inline-block;
+    text-align: center;
+    position:relative;
+    top: 200px;
+    background-color: rgba(219, 223, 217, 0.9);
+    height:850px;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+    padding-right: 55px;
 }
 
-.footer {
+.authors > h1 {
+    font-size: 20px;
+    color: #325050;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.authors > h2 {
+    font-size: 15px;
+    color: rgba(112, 108, 108, 0.349);
+    font-style: italic;
+    border-bottom: 1px solid;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+
+    
+}
+
+.authors > h3 {
+    position: relative;
+    right: 170px;
+    bottom: 30px;
+    font-size: 15px;
+    color: #325050;
+    text-align: right;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.participation{
+    background-color: rgba(138,188,159,0.2);
+    position: relative;
+    height:850px;
+    top: 1110px;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+    padding-right: 55px;
+}
+
+.participation > h2{
+    font-size: 30px;
+    color: #325050;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.participation > h4{
+    color: #325050;
+    font-size: 25px;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.links {
+    background-color: rgba(138,188,159,0.5);
+    position: relative;
+    height:940px;
+    top: 1110px;
+}
+
+.links > h1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+    padding-right: 55px;
+    font-size: 20px;
+    color: #325050;
+    font-family: 'Julius Sans One', sans-serif;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    
+}
+
+.requirements{
+    position: relative;
+    top: 2000px;
+    background-color: #fff;
+    height:850px;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+    padding-right: 55px;
+}
+
+
+.requirements > h2{
+    font-size: 30px;
+    color: #325050;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.requirements > h4{
+    color: #325050;
+    font-size: 25px;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.blank{
+    position:relative;
+    top: 2000px;
+    background-color: rgba(219, 223, 217, 0.9);
+    height:850px;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+    padding-right: 55px;
+}
+
+.footer2{
+    position:relative;
+    top: 2804px;
+    background-color: chartreuse;
     width: 100%;
-    /* make these span the width of the page */
-    background-color: aquamarine;
+    float: left;
+    height: 250px;
+    background-image:url('huntington.jpeg');
+    color: white;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+    padding-right: 55px;
+    
+    
+}
+
+.footer2 > span{
+font-style: italic;
+color: rgb(255, 255, 255, 0.5);
+}
+
+
+
+.footer {
+    position:relative;
+    top: 2704px;
+    width: 100%;
+    height: 150px;
+    float: left;
+    background-color: #134347;
+}
+
+.footer > #html{
+    font-family: 'verdemoderna';
+    content: "5;"
 }
 
 @media (max-width: 900px){
     /* use this media query to help these two cells drop to the bottom when screens are smaller */
-    .authors {
-         
-    }
-    .links {
+    .title{
+        grid-row: 1;
+        height: 50px;
+        font-size: 15px;
+        
 
     }
-    /* container could use some help so that it's children are full screen width */
-    .container {
+
+    .title >img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .title > h1{
+        font-size: 15px;
+        top: 20px;
+        left: 320px;
+    }
+
+    .title > h2{
+        font-size: 15px;
+        top: 20px;
+        left: 310px;
+    }
+
+    .title2{
+        grid-row: 2;
+        height: 50px;
+        font-size: 15px;
         
+    }
+
+    .about{
+        grid-row: 3;
+    }
+
+
+.authors {
+         grid-row: 5
+    }
+
+    .participation {
+        grid-row: 6;
+    }
+.links {
+    grid-row: 7
+    }
+
+.requirements{
+    grid-row: 8;
+}
+
+.footer2{
+    grid-row: 9;
+}
+
+.footer2{
+    grid-row: 10;
+}
+
+.blank{
+    height: 0px;
+    width: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+}
+    /* container could use some help so that it's children are full screen width */
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 50px);
+    width: 100%;
+    display: grid;
+    padding: 0px;
     }
 }
 
