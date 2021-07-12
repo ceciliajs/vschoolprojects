@@ -1,0 +1,27 @@
+#header {
+    background-image: url('img.jpeg');
+}
+
+#title {
+    text-align: center;
+    color: white;
+}
+
+#subTitle {
+    text-align: center;
+    color: white;
+}
+
+.nav{
+    color: white;
+
+    
+}
+
+.blogs{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 300px;
+    border-bottom: 1px solid #cecece;
+}

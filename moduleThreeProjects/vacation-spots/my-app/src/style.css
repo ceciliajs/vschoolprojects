@@ -1,0 +1,26 @@
+body {
+    background-color: aqua;
+}
+
+h6 {
+    background-color: blueviolet;
+    font-size: xx-large;
+    font-style: italic;
+   
+}
+
+#place {
+    color: chartreuse;
+   
+}
+
+#price {
+    color: crimson;
+    
+}
+
+#season {
+    color: rgb(72, 82, 82);
+  
+
+}

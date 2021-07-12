@@ -1,0 +1,21 @@
+.friendContainer{
+    margin: 20px;
+}
+
+.friends {
+    display: flex;
+    color: rgb(192, 25, 150);
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: darksalmon;
+    width: 50%;
+}
+
+.pets{
+    display: flex;
+    color: rgb(103, 25, 192);
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: deeppink;
+    width: 50%;
+}
