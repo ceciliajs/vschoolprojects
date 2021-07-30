@@ -1,0 +1,7 @@
+.dice{
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
