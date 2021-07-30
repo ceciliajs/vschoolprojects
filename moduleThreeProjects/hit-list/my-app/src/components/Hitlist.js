@@ -24,8 +24,8 @@ class Hitlist extends Component {
     render() {
         const targets = this.state.hitListCards.map((item,index)=>
                 <div>
-                    {item.img}
-                    {item.name}
+                   <div>{item.img}</div>
+                   <div>{item.name}</div>
                 </div>
         )
 
