@@ -1,0 +1,53 @@
+img {
+    height: 200px;
+    width: 330px
+}
+
+.targets{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: wrap;
+}
+
+.names {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: wrap;
+    color: blue;
+    line-height: 20px;
+    font-size: 17px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.names:hover{
+    font-size: 20px;
+}
+
+.targets:nth-child(1){
+    background-color: pink;
+}
+
+.targets:nth-child(2){
+    background-color: gold;
+}
+
+.targets:nth-child(3){
+    background-color: green;
+}
+
+.targets:nth-child(4){
+    background-color: purple;
+}
+
+.targets:nth-child(5){
+    background-color: orange;
+}
+
+.targets:nth-child(6){
+    background-color: red;
+}
+
+.targets:nth-child(7){
+    background-color: pink;
+}

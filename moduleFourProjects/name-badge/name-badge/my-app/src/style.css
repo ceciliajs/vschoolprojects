@@ -1,0 +1,43 @@
+#form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    height: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  li {
+      border: solid;
+      border-color: black;
+      border-width: 5px;
+  }
+
+  #badges{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  text{
+      border: black;
+      border-style: solid;
+      border-width: 10%;
+  }
+
+  h1 {
+      background-color: blueviolet;
+  }

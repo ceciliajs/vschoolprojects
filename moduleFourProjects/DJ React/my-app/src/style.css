@@ -1,0 +1,15 @@
+.boxes {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    
+    
+    
+}
+
+.box {
+    border: black;
+    border-style: solid;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}

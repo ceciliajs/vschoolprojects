@@ -19,9 +19,15 @@ class NameBadge extends Component {
     }
 
     handleSubmit(event) {
-        console.log("string")
         event.preventDefault();
-        const newBadges = [...this.state.badges]
+        // const newBadges = [...this.state.badges]
+        // // pass in prevState
+        // newBadges.push(newBadge)
+        
+        
+        
+        // this.setState({ badges: newBadges })
+        // console.log(newBadges)
         const newBadge = {
             firstName: this.state.firstName,
             lastName: this.state.lastName,
@@ -31,10 +37,31 @@ class NameBadge extends Component {
             favFood: this.state.favFood,
             description: this.state.description
         }
-        newBadges.push(newBadge)
 
-        this.setState({ badges: newBadges })
-        console.log(newBadges)
+        this.setState((prevState) => {
+            return {
+
+                firstName: "",
+                lastName: "",
+                email: "",
+                placeOfBirth: "",
+                phone: "",
+                favFood: "",
+                description: "",
+                badges: [newBadge, ...prevState.badges]
+                /// badges: [ {firstName: "", lastName: ""}]
+
+                /*
+                /// badges: [
+                    {firstName: "", lastName: ""}, 
+                    {firstName: "", lastName: ""}
+                    ....
+                ]
+
+*/
+            }
+        }
+        )
 
     }
 

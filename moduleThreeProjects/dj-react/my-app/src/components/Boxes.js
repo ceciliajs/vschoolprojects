@@ -19,7 +19,20 @@ class Boxes extends React.Component {
     };
 
     changeColor() {
-        let currentColorsArray = [...this.state.colors]
+        // this.setState(prevState=> {
+        //     if(prevState.colors[0] === "white"){
+        //         return {
+        //             colors: [...prevState.colors, "black", "black" ]
+        //         }
+        //     } else if (prevState.colors[0] === "black"){
+        //         return {
+        //             colors: [...prevState.colors, "white", "white" ]
+        //         }
+        //     }
+        // })
+
+
+        let currentColorsArray = this.state.colors
         let newColorsArr = currentColorsArray.map(colorString => {
             if (colorString === 'white') {
                 return colorString = 'black'
@@ -29,9 +42,8 @@ class Boxes extends React.Component {
             
         })
 
-        this.setState(prevState => ({
-            colors: newColorsArr
-        }))
+        this.setState({colors: newColorsArr})
+
     };
 
     changePurple(){
@@ -41,9 +53,7 @@ class Boxes extends React.Component {
         currentColorsArray[1] = "purple"
         
 
-        this.setState(prevState => ({
-            colors: currentColorsArray
-        }))
+        this.setState({colors: currentColorsArray})
     };
 
     changeLeft(){
@@ -52,9 +62,7 @@ class Boxes extends React.Component {
         currentColorsArray[2] = "blue"
         
 
-        this.setState(prevState => ({
-            colors: currentColorsArray
-        }))
+        this.setState({colors: currentColorsArray})
     };
 
     changeRight(){
@@ -63,9 +71,7 @@ class Boxes extends React.Component {
         currentColorsArray[3] = "blue"
         
 
-        this.setState(prevState => ({
-            colors: currentColorsArray
-        }))
+        this.setState({colors: currentColorsArray})
     };
 
     changeOne(){
@@ -74,9 +80,7 @@ class Boxes extends React.Component {
         console.log(currentColorsArray)
         
 
-        this.setState(prevState => ({
-            colors: currentColorsArray
-        }))
+        this.setState({colors: currentColorsArray})
     };
 
     changeTwo(){
@@ -85,9 +89,7 @@ class Boxes extends React.Component {
         currentColorsArray[1] = "yellow"
         
 
-        this.setState(prevState => ({
-            colors: currentColorsArray
-        }))
+        this.setState({colors: currentColorsArray})
     };
 
     changeThree(){
@@ -96,9 +98,7 @@ class Boxes extends React.Component {
         currentColorsArray[2] = "red"
         
 
-        this.setState(prevState => ({
-            colors: currentColorsArray
-        }))
+        this.setState({colors: currentColorsArray})
     };
 
     changeFour(){
@@ -107,9 +107,7 @@ class Boxes extends React.Component {
             currentColorsArray[3] = "orange"
             
 
-            this.setState(prevState => ({
-                colors: currentColorsArray
-            }))
+            this.setState({colors: currentColorsArray})
         };
 
     render() {

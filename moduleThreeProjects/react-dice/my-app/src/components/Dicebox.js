@@ -25,9 +25,7 @@ class Dicebox extends React.Component {
 
         })
 
-        this.setState(prevState => ({
-            colors: newDiceArr
-        }))
+        this.setState({colors: newDiceArr})
 
     }
 
