@@ -10,7 +10,6 @@ function App(props) {
       <div className="App">
         <header>Welcome to Ugly Things</header>
         <UglyThingsListForm />
-        <UglyThingsEditForm />
       </div>
    
 
