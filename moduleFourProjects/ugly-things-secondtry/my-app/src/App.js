@@ -1,14 +1,13 @@
 import React from "react";
-import UglyThingsEditForm from "./components/UglyThingsEditForm";
 import UglyThingsListForm from "./components/UglyThingsListForm"
 
-function App(props) {
+function App() {
 
   return (
 
     
       <div className="App">
-        <header>Welcome to Ugly Things</header>
+        <header style={{ fontSize: "35px" }}>Welcome to Ugly Things</header>
         <UglyThingsListForm />
       </div>
    

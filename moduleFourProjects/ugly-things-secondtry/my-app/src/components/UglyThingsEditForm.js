@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { UglyThingsContext } from "../UglyThingsContextProvider";
+import axios from "axios";
 
 
 function UglyThingsEditForm(props) {
@@ -8,32 +9,21 @@ function UglyThingsEditForm(props) {
 
     const [uglyThingsListEditFormState, setUglyThingsListEditFormState] = useState({
         title: props.title,
-        description: props.description,
         imgUrl: props.imgUrl,
-        id: props.id
+        description: props.description
     });
 
-    const handleSubmitForEdits = (e) => {
-        e.preventDefault();
-
-        const newItem = {
-            title: uglyThingsListEditFormState.title,
-            description: uglyThingsListEditFormState.description,
-            imgUrl: uglyThingsListEditFormState.imgUrl,
-            id: uglyThingsListEditFormState.id
-        };
-
-        setUglyThingsNewList(prevList => {
-            const newList = prevList.map(listitem => {
-                if (listitem.id === uglyThingsListEditFormState.id) {
-                    return newItem
-                } else {
-                    return listitem
-                }
+    function updateThroughEdit() {
+        axios.put(`https://api.vschool.io/ceciliastark/thing/${props.id}`, uglyThingsListEditFormState)
+        .then((response) => {
+            setUglyThingsNewList(data => 
+                data.map(listitem => listitem._id === props.id ? response.data : listitem))
+                
             })
-            return newList
-        });
+    };
 
+    function handleSubmitForEdits(e) {
+        e.preventDefault();
         props.toggleEdit();
     };
 
@@ -65,7 +55,7 @@ function UglyThingsEditForm(props) {
                     onChange={handleChangeForEdits}
                     placeholder="URL"
                 />
-                <button>Submit</button>
+                <button id={props.id} onClick={updateThroughEdit} >Submit</button>
             </form>
 
         </div>

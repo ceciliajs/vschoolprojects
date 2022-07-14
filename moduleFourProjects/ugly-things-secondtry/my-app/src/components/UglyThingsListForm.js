@@ -3,12 +3,12 @@ import { UglyThingsContext } from "../UglyThingsContextProvider.js"
 import UglyThingListItem from "./UglyThingListItem.js"
 
 
-function UglyThingsListForm(props) {
+function UglyThingsListForm() {
 
     const { uglyThingsListItem, handleChange, handleSubmit, uglyThingsNewList } = useContext(UglyThingsContext);
 
     const list = uglyThingsNewList.map((uglyitem, index) =>
-        <UglyThingListItem key={index} title={uglyitem.title} description={uglyitem.description} imgUrl={uglyitem.imgUrl} id={uglyitem.id} />
+        <UglyThingListItem key={index} title={uglyitem.title} description={uglyitem.description} imgUrl={uglyitem.imgUrl} id={uglyitem._id} />
     );
 
     return (
@@ -25,22 +25,16 @@ function UglyThingsListForm(props) {
                     placeholder="Title"
                 />
                 <input
-                    name="description"
-                    value={uglyThingsListItem.description}
-                    onChange={handleChange}
-                    placeholder="Description"
-                />
-                <input
                     name="imgUrl"
                     value={uglyThingsListItem.imgUrl}
                     onChange={handleChange}
                     placeholder="URL"
                 />
                 <input
-                    name="id"
-                    value={uglyThingsListItem.id}
+                    name="description"
+                    value={uglyThingsListItem.description}
                     onChange={handleChange}
-                    placeholder="id"
+                    placeholder="Description"
                 />
                 <button>
                     Submit

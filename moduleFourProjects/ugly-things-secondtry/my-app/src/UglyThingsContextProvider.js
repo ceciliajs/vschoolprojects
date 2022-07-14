@@ -1,30 +1,30 @@
-import React, { useState } from "react"
-const UglyThingsContext = React.createContext()
+import React, { useEffect, useState } from "react"
+import axios from "axios"
+const UglyThingsContext = React.createContext();
 
 function UglyThingsContextProvider(props) {
+
+    //managing side effects
+    useEffect(() => {
+        grabData()
+    }, []);
+
+    function grabData() {
+        axios.get(`https://api.vschool.io/ceciliastark/thing`)
+            .then(response => {
+                setUglyThingsNewList(response.data)
+            })
+    };
 
     // this state controls the UglyThingsListForm for adding a new item
     const [uglyThingsListItem, setUglyThingsListItem] = useState({
         title: "",
-        description: "",
         imgUrl: "",
-        id: ""
+        description: ""
     });
 
     //this state controls list
-    const [uglyThingsNewList, setUglyThingsNewList] = useState([
-        {
-            title: "test 1",
-            description: "desc 1",
-            imgUrl: "test",
-            id: "1"
-        },
-        {
-            title: "test 2",
-            description: "desc 2",
-            imgUrl: "test",
-            id: "2"
-        }]);
+    const [uglyThingsNewList, setUglyThingsNewList] = useState([]);
 
     //this state controls the toggle
     const [isEditOn, setIsEditForm] = useState(false);
@@ -32,22 +32,25 @@ function UglyThingsContextProvider(props) {
     // add a new item
     const handleSubmit = (e) => {
         e.preventDefault()
-        setUglyThingsNewList(prev => ([...prev, uglyThingsListItem]))
-        /// add new item to uglyThingsListItem using axios put method and [newItem, ...uglyThingsListItem]
+        axios.post("https://api.vschool.io/ceciliastark/thing", uglyThingsListItem)
+            .then(() => {
+                setUglyThingsNewList(prev => ([...prev, uglyThingsListItem]))
+                grabData()
+            })
+            .catch(err => console.log(err))
+
         setUglyThingsListItem({
             title: "",
-            description: "",
             imgUrl: "",
-            id: ""
+            description: ""
         })
-
     };
 
-    // delete function
-    const deleteItem = (id) => {
-        // call setUglyThingsNewList
-        // upate the state using the filter method 
-        // if the id !== currentItem.id
+    function deleteItem(id) {
+        axios.delete(`https://api.vschool.io/ceciliastark/thing/${id}`)
+            .then(() => setUglyThingsNewList(prevThing => {
+                return prevThing.filter(currentItem => currentItem._id !== id)
+            }))
     };
 
     // controls UglyThingsListForm (for adding a new item)
@@ -70,7 +73,8 @@ function UglyThingsContextProvider(props) {
             handleChange,
             handleSubmit,
             toggleEdit,
-            setUglyThingsNewList
+            setUglyThingsNewList,
+            deleteItem
         }}>
             {props.children}
 

@@ -13,7 +13,7 @@ function App() {
     
     axios.get(`https://demo.visualinspection.maximo15.innovationcloud.info/api/datasets/05c6f1ad-6d41-4568-893a-6c4c873f170f/files`, {
           headers: {
-            'x-auth-token': '2UK8-798d-uBtH-8mbK'
+            'x-auth-token': ''
       }, 
         params: {
           query: 'user_metadata.type == "bad_dented"'
