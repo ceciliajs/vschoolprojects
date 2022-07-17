@@ -15,7 +15,7 @@ function App() {
 
 //   useEffect(() => {
     
-//     axios.get(`https://demo.visualinspection.maximo15.innovationcloud.info/api/datasets/05c6f1ad-6d41-4568-893a-6c4c873f170f/files`, {
+//     axios.get(`https://demo.visualinspection.maximo15.innovationcloud.info/api/datasets//files`, {
 //           headers: {
 //             'x-auth-token': ''
 //       }, 

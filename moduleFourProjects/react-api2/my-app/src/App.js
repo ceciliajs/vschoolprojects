@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="grid-container">
-      <h4 className="title">Welcome to your Inspection Data Customized Platform!</h4>
+      <h4 className="title">Welcome to your Inspection Data Customized Platform! Made by you, for you.</h4>
     <Router>
 
 <nav className="navbar" style={{
