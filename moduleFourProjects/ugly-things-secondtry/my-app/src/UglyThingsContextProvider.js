@@ -29,7 +29,7 @@ function UglyThingsContextProvider(props) {
     //this state controls the toggle
     const [isEditOn, setIsEditForm] = useState(false);
 
-    // add a new item
+    // add a new item //context not needed
     const handleSubmit = (e) => {
         e.preventDefault()
         axios.post("https://api.vschool.io/ceciliastark/thing", uglyThingsListItem)
@@ -53,7 +53,7 @@ function UglyThingsContextProvider(props) {
             }))
     };
 
-    // controls UglyThingsListForm (for adding a new item)
+    // controls UglyThingsListForm (for adding a new item)  //context not needed
     const handleChange = (e) => {
         const { value, name } = e.target
         setUglyThingsListItem(prevUglyThingState => ({ ...prevUglyThingState, [name]: value }))

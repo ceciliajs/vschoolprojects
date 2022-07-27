@@ -4,6 +4,7 @@ import axios from "axios"
 function Dashboard() {
 
   const [lastNumOfDefects, setDefectNum] = useState()
+  const [lastNumOfPasses, setPassNum] = useState()
 
   useEffect(() => {
     grabNumOfDefects()
@@ -11,42 +12,45 @@ function Dashboard() {
   }, []);
 
   function grabNumOfDefects() {
-
-    axios.get(`https://wwdemo.visualinspection.wwdemomas8.gtm-pat.com/api/datasets//files`, {
+    axios.get(`MAS_URL/api/datasets/DATASET_ID/files`, {
       headers: {
-        'x-auth-token': '',
+        'x-auth-token': 'API_KEY',
       }
     })
       .then(response => {
         console.log("this is api response ", response);
         const resData = response.data
-        var count = 0
+        var countDef = 0
+        var countPass = 0
+
         for (var i = 0; i < resData.length; i++) {
-          console.log(resData[i].tag_list[0].tag_name)
-          const failLabelsTotal = resData[i].tag_list[0].tag_name
-          console.log("this is failLabelsTotal[0] ", failLabelsTotal[0])
-          if (failLabelsTotal === 'bad_dented') {
-            count++
+          if (resData[i].upload_type === "inference_result") {
+            const failLabelsTotal = resData[i].tag_list[0].tag_name
+            if (failLabelsTotal === 'bad_dented') {
+              countDef++
+            } else if (failLabelsTotal === 'good') {
+              countPass++
+            }
+
           }
 
         }
-        console.log(count)
-        setDefectNum(count)
+        setDefectNum(countDef)
+        setPassNum(countPass)
       })
       .catch(function (error) {
         console.log(error);
       });
-
   }
 
-
-
   return (
-    <div >
-      <h5 style={{ fontStyle: "italic" }}>Current # of Defective Parts</h5>
-      <div>{lastNumOfDefects}</div>
-      <button onClick={grabNumOfDefects} style={{ backgroundColor: "#0f62fe", color: "white" }}>Refresh</button>
-    </div>
+    < >
+      <h5 className="parts-dashboard1">Current # of Defective Parts</h5>
+      <div className="parts-dashboard1-2">{lastNumOfDefects}</div>
+      <h5 className="parts-dashboard2">Current # of Passed Parts</h5>
+      <div className="parts-dashboard2-2">{lastNumOfPasses}</div>
+      <button className="refreshButton" onClick={grabNumOfDefects}>Refresh</button>
+    </>
   );
 }
 

@@ -1,56 +1,61 @@
-import React, { useEffect, useState } from "react"
-import axios from "axios"
-import FileUploader from "./FileUploader"
+import React, { useState } from "react"
+import axios from 'axios';
+import UploadSuccess from "./UploadSuccess";
 
-function UploadForm() {
+const UploadForm = () => {
+  // a local state to store the currently selected file.
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [isUploadSuccessful, setUploadSuccess] = useState(false)
 
-const [name, setName] = useState("")
-const [selectedFile, setSelectedFile] = useState(null)
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    var FormData = require('form-data');
 
-const submitForm = () => {
-  const formData = new FormData();
-  formData.append("name", name);
-  formData.append("file", selectedFile)
-  axios.post("https://wwdemo.visualinspection.wwdemomas8.gtm-pat.com/api/dlapis/", {
-    headers: {
-      'x-auth-token': ''
-    },
-    data: formData
-  })
-  .then((response) => {
-    console.log(response)
-    alert("File Upload success");
-  })
-  .catch(function (error) {
-    console.log(error);
-  })
+    var data = new FormData();
+    data.append('filename', selectedFile.name);
+    data.append('files', selectedFile);
 
+    var config = {
+      method: 'post',
+      url: 'DEPLOYED_MODEL_API_ENDPOINT',
+      headers: {
+        'X-Auth-Token': 'API_KEY',
+        'Content-Type': 'multipart/form-data'
+      },
+      data: data
+    };
 
+    axios(config)
+      .then(function (response) {
+        if(response.status === 200){
+          setUploadSuccess(true)
+        }
+        console.log(response)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+  const handleFileSelect = (event) => {
+    setSelectedFile(event.target.files[0])
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input className="inputFile" type="file" onChange={handleFileSelect} />
+      <input className="inputUpload" type="submit" value="Upload" />
+      {isUploadSuccessful ?
+        <UploadSuccess />
+        :
+        <>
+        <div className="uploadFile">Upload File Here</div>
+        </>
+
+      }
+    </form>
+  )
 };
 
-    return (
-      <div>
-        <h5 style={{fontStyle: "italic"}}>Upload Your Image Here</h5>
-        <form>
-          <input 
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-            />
-          <FileUploader
-          onFileSelectSuccess={(file) => setSelectedFile(file)}
-          onFileSelectError={({ error }) => alert(error)}
-          />
-{/* 
-          <input 
-          type="file"
-          value={selectedFile}
-          onChange={(e) => setSelectedFile(e.target.files[0])}
-            /> */}
-        <button onClick={submitForm} style={{backgroundColor: "#0f62fe", color: "white"}}>Upload</button>
-        </form>
-      </div>
-    );
-  }
-  
-  export default UploadForm;
+export default UploadForm;
+
